@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Personal Information</h1>
+    <form action="post">
+        <div>
+
+            <label for="info">Enter your name</label>
+            <input type="text" id="info" name="Name" placeholder="Name">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="Intrest">checkbox</label>
+            <input type="checkbox" name="check" id="Intrest">
+        </div>
+        <div>
+            <label for="text">Enter about yourself</label><br>
+            <textarea name="textarea" id="text" rows="12" cols="20" placeholder="Enter about yourself"></textarea>
+        </div>
+        <div>
+            <label for="fruits">Select your favourate fruit</label>
+            <select name="Fruits" id="fruits">
+                <option value="Apple">Apple</option>
+                <option value="Mangp">mango</option>
+                <option value="banana">banana</option>
+
+            </select>
+
+        </div>
+    </form>
+</body>
+
+</html>

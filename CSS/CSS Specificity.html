@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        .lol{
+            color: blueviolet;
+        }
+        .hi{
+            color: aqua;
+        }
+        .bye{
+            color: chocolate !important;
+        }
+        /* This is an example of attribute selector */
+        [data-x=a]{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: crimson;" class="lol hi bye" data-x="a">Hi this is to demonstrate Specificity in CSS</h1>
+    <p><h2>
+       important keyword > Inline style > ID selector > class or attribute Selector > Element Selector > Universal Selector
+    </h2></p>
+</body>
+</html>

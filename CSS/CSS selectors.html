@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+    /* div{
+        color: blue;
+    } */
+
+    /* Class selector */
+    .lol{
+        color:blue;
+    }
+
+    /* ID selector */
+    #lol2{
+        color: aqua;
+    }
+
+    /* Child selector */
+    div > p{
+        color: chartreuse;
+    }
+
+    /* Desendent Selector */
+    div p{
+        color: chartreuse;
+    }
+
+    /* Universal selectors */
+    *{
+        margin:0;
+        padding: 0;
+    }
+
+    /* Pseudo Selector */
+    a:visited{
+        color:darkblue;
+    }
+    a:link{
+        color: crimson;
+    }
+    a:active{
+        background-color: blueviolet;
+    }
+    a:hover{
+        background-color: yellow;
+    }
+    p:first-child{
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <div class="lol">
+        This is a div
+        <p>This is a para inside div</p>
+        <p>This p is the second child of div class</p>
+    </div>
+    <div id="lol2">
+        This is another div
+    </div>
+    <div>
+        <article>
+            <p>This is also a para inside div but style is not applied because it is inside article tag. It can be styled using Desendent tag</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to google</a>
+</body>
+</html>

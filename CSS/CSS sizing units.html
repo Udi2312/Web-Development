@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1600px; */
+            width: 65vw;
+            margin: 23px auto;
+            /* height: 30vh; */
+            min-height: 80vh;
+            background-color: blue;
+            /* font-size: 18px; */
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1600px; */
+            /* 100 vw = full screen */
+            width: 65vw;
+            /* vh tells us percentage of vw */
+            height: 50vh;
+            margin: auto;
+            background-color: blue;
+        }
+
+        .container p {
+            /* em multiplies the inherited value by the em value. In this case, font size is 18 for class container but 2em multiplies it by 2 */
+
+            /* font-size: 2em; */
+
+            /* rem multiplies the value inherited from root element.In this case, font size of html is 12 but 2rem multiplies it by 2 */
+            font-size: 2em;
+
+            /* 50% width means 50% of parent */
+            width: 50%;
+            border: 2px solid red;
+        }
+        .lol2{
+            background-color: red;
+            color: aqua;
+            font-size: 22px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">This is a box.</div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti commodi aspernatur modi, recusandae ex, ut libero possimus minima asperiores minus ipsam obcaecati voluptas cumque dolorem amet nulla, pariatur sequi consectetur ipsa quos perferendis nam? Quae non unde, adipisci iste dolores animi asperiores hic esse dolorum.
+        </p>
+    </div>
+    <div class="lol2">This is another container.</div>
+</body>
+
+</html>
